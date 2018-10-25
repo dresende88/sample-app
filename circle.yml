@@ -1,6 +1,6 @@
 test:
-  override:
-    - php ./test.php
+   override:
+      - php ./test.php
 deployment:
   staging:
     branch: master
@@ -11,6 +11,6 @@ deployment:
         revision_location:
           revision_type: S3
           s3_location:
-            bucket: glob-bucket-east-1
+            bucket: danielrlab-circleci-sample
             key_pattern: circleci-demo-app-{BRANCH}-{SHORT_COMMIT}
         deployment_group: circleci-demo-dg
